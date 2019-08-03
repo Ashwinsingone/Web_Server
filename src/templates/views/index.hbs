@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+       <link rel="shortcut icon" href="/img/stars_favicon.png" type="image/x-icon" />   
+      <link rel="stylesheet" href="/css/styles.css" >   
+                                                         
+       
+    </head>
+
+        <body>
+        <div class="main-content">
+           {{>headers}}
+            <h3>        
+                <p>Know the temperature and precipitation of your location</p>
+              
+                <form>
+                    <input placeholder="Search location">
+                    <button>Search</button>
+                </form>
+
+                <p id="location_index">  </p>
+                <p id="temperature_index"> </p>
+            </h3>
+        </div>
+            
+        {{>footers}}
+
+         <script src="/js/Output_on_Client.js" > </script>
+        </body>
+</html>
