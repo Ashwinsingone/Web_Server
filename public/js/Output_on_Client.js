@@ -8,7 +8,7 @@ addressForm.addEventListener('submit', (e) => {
    
     const search = document.querySelector('input')
     
-    fetch('http://localhost:3000/pinpoint?address=' + search.value).then((response) => {
+    fetch('/pinpoint?address=' + search.value).then((response) => {
         response.json().then((data) => {
             if(data.error)
             {

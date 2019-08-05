@@ -7,6 +7,9 @@ const viewPath = path.join(__dirname,'./templates/views')                       
 const partialsPath = path.join(__dirname,'./templates/partials')
 
 const app = express()
+
+const port = process.env.PORT || 3000
+
                                                                         //parameter should be exact(case sensitive or spaces etc) or it will not execute
 const DirPath = path.join(__dirname, '../public')                       //joined the index.html existing folder         // now can call directly after root 'localhost: 300/index.html' and it will run
 const name ='Ashwin'
@@ -109,6 +112,6 @@ app.get('*' , (req,res) => {
 
 
 // TO start the server
-app.listen(3000, ()=> {
-    console.log('Started at 3000')
+app.listen(port, ()=> {
+    console.log('Started at '+ port)
 })
