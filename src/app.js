@@ -9,6 +9,7 @@ const partialsPath = path.join(__dirname,'./templates/partials')
 const app = express()
 
 const port = process.env.PORT || 3000
+console.log('PORT------------> '+port)
 
                                                                         //parameter should be exact(case sensitive or spaces etc) or it will not execute
 const DirPath = path.join(__dirname, '../public')                       //joined the index.html existing folder         // now can call directly after root 'localhost: 300/index.html' and it will run
